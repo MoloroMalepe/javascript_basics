@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+	<title>
+		Create a Portfolio Gallery
+		using HTML and CSS
+	</title>
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+</header>
+<style>
+/* wildcard styling */
+* {
+    box-sizing: border-box;
+}
+
+/* padding for whole body */
+body {
+    padding: 15px;
+}
+
+/* styling body */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: green;
+}
+
+/* anchor tag decoration */
+a {
+    text-decoration: none;
+    color: #5673C8;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+/* paragraph tag decoration */
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+
+}
+
+/* row and column decoration */
+.row {
+    margin: 0px -18px;
+    padding: 8px;
+}
+
+.row > .column {
+    padding: 6px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content decoration */
+.content {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+/* window size 850 width set */
+@media screen and (max-width: 850px) {
+    .column {
+        width: 50%;
+    }
+}
+/*
+Set a matching height and width that looks good, and use the border-radius property to add rounded corners to an image. 
+50% will make the image circular:
+
+*/
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
+<body>
+	
+	<!-- title and tag -->
+	<div class="container">
+		<h1>My Potfolio</h1>
+		<h3>Hi I am a Full Stack Developer</h3>
+		<hr>
+
+		<!-- Content of the body-->
+		<h2>Portfolio</h2>
+        
+        <img src="https://lh3.googleusercontent.com/pw/ADCreHehkeD1nREJosBEBBvdSzsWi0np5pPrDpe-5UiKcn1Zm7K5uaZyVLgut0s43I6r1bduyC9MvzKXkXuRWCC77jyOWU26k-CT-VPRDjp_BwpCmCa2zr4O24JH6eRyHNWHv68GAPTewVU5MqZUnPxM2J8vuQUgqU0WPXOgihWIZYZUxLoMOVyguXi5ToQmiTzSDyC1e5imrVZZv80LfGd8a0R4CQzqOOhPpOkEPvmZTdSuokJHxFi4LvGxtql9sYXCPGywsj11_Kt-7a3uG2p2OJCS57KMAQG-Ut8uEijXvJcuS5oXs0w0irV7cPBh93rRsbyvUYbuYfskOkBL1kuF908RPQ5jOrASpaL5E7hV0hsPkKWgKiu-MMsb0camY2z3SXiH613WLwjupkwkGeZHfMkU93-3VcWQk0_bkjiL19POoak0Ja-RqjEy1bWtVy3dPltUFDLZ_G48oFGSowQylCraPgU-tqB3Monnp_IOIUalMXF310FVyvQzz7lQqYnrNDR_FqSZSMtVUG696JqntFElzRNWMZmsYmFGyAI1ngeXB6bNfg3T-Q1BsI_HgSKXle152jT-FSpmUCttLcb_CjKOrqwLbRZZdKVgRKr7kP6oHmkrJiB2emNFWbRc6eSNS-j57jnoCuXVsHIRQhrTCbYclLi1wmG_nAyBwyVXGPSFW4eJr51oQFmhWwVwza7vQ8H-jCfkzjAby30ib1kx8AjlWectj5CC8kZR0yCi3NI0e-tA0ic9IQVd7j50XoZCDKfTDLEOUk3WODCLBmrRmsy1EE6Nm3WTIIPWX_mlpN-oCiqgcXPwipIOtTFhNYRYNL4xUAP8l54VAXmwXoP9KHNNzAcjCv9EaefPBCuqtnaOmzhFOpWMomT6Hgu_FkQN5gWCkjLQ0TLowFUQjb5vZQD3lKQY3h_XniZR3HXxDrqz5rornPiqYHmnEYG_=w1174-h1566-s-no-gm?authuser=0" alt="Avatar" class="avatar">
+        <h2>Moloro Malepe</h2>
+        <h3>My Bio</h3>
+        <p>Let me introduce myself....</p>
+       <p><strong>Motto:</strong></p> <blockquote> "As above, as below"
+        </blockquote>
+        <span>
+            <p>Hi I am a full stack developer currently enrolled in the Full-stack programme at Shaper. I am currently doing the following modules</p>
+        </span>
+		<div class="row">
+			<div class="column">
+				<div class="content">
+					<img src=
+"https://www.geeksforgeeks.org/wp-content/uploads/html.png"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">HTML Description</a>
+					</h3>
+					
+
+
+
+<p>
+						HTML stands for Hyper Text Markup
+						Language. It is used to design web
+						pages using markup language. HTML
+						is the combination of Hypertext and
+						Markup language. Hypertext defines
+						the link between the web pages.
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"https://www.geeksforgeeks.org/wp-content/uploads/CSS.png"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">CSS Description</a>
+					</h3>
+					
+					
+
+
+
+<p>
+						Cascading Style Sheets, fondly referred
+						to as CSS, is a simply designed language
+						intended to simplify the process of
+						making web pages presentable. CSS allows
+						you to apply styles to web pages.
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210322182256/AngularJS-Tutorial.png"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">Angular Description</a>
+					</h3>
+					
+					
+
+
+
+<p>
+    AngularJS was developed in 2008-2009 by Misko Hevery and Adam Abrons
+     and is now maintained by Google.
+     AngularJS is a Javascript open-source front-end framework that is mainly
+      used to develop single-page web applications(SPAs). 
+     It is a continuously growing and expanding framework which provides better
+      ways for developing web applications.
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					<img src=
+"https://www.geeksforgeeks.org/wp-content/uploads/javascript.png"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">JavaScript Tutorials</a>
+					</h3>
+					
+					
+
+
+
+<p>
+						Javascript was developed by Brendan
+						Eich in 1995. At first, it was called
+						LiveScript but was later name to
+						JavaScript. JavaScript is the muscle
+						of the structure
+					</p>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer>Copyright &copy; Moloro</footer>
+</body>
+
+</html>

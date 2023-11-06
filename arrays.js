@@ -19,4 +19,4 @@ for(; i < courses.length; i++){
 console.log(space);
 
 
-console.log(courses);
+//console.log(courses);

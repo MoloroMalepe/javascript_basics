@@ -42,17 +42,21 @@ let additionNum = calcFunc(13, 24);
 console.log("The output is: "+additionNum);
 
 
-//this keyword in object methods
+/*this keyword in object methods
 
 
 let person = {
-    name: "Moloro",
+    firstname: "Moloro",
     occupation: "Software Engineer",
  get getName() {
-    return "My name is" + this.name 
+    return "My name is" + this.firstname 
     },
-}
+};
 
-console.log(intro.function(person));
+console.log(firstname.getName);*/
+
+//this keyword used in an object methods
+
+
 
 
